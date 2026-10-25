@@ -35,15 +35,15 @@ input,select,button{font:inherit;border:1px solid #d3dce9;border-radius:11px;pad
 }
 @media(max-width:380px){.selected-item{grid-template-columns:25px minmax(0,1fr) auto!important}.selected-item .actions{grid-column:auto!important;padding-left:0!important}.selected-item .actions button{min-width:25px!important;width:25px!important}}
 </style></head><body><div class="app">
-<header><h1>Bihar PGMAC Choice Filling</h1><p>Build your preference list in order. Add colleges and branches, then rank them using the arrows. Your list saves automatically on this device.</p></header>
+<header><h1>Bihar PGMAC Choice Filling</h1><p>Build your preference list in order. Add colleges and branches, then rank them using the arrows. Your list saves automatically on this device. Refresh or closing the page will erase your selected choices.</p></header>
 <div class="layout">
-<section class="panel"><h2>🔎 All colleges & branches</h2><p class="sub">Search the catalog and click Add. Already-selected options are disabled.</p>
+<section class="panel"><h2>🔎 All government colleges & branches of Bihar </h2><p class="sub">Search the catalog and click Add. Already-selected options are disabled.</p>
 <input id="catalogSearch" placeholder="Search college, branch, or code..." aria-label="Search all colleges">
 <div class="catalog-tools"><button type="button" id="expandAll">Expand all</button><button type="button" id="collapseAll">Collapse all</button><span id="collegeCount"></span></div><div class="catalog" id="catalog"></div></section>
 <section class="panel"><h2>⭐ Your selected preferences</h2><p class="sub">Choices are ranked in the order you add them. Use ↑ / ↓ to change ranking.</p>
 <div class="hint">The first college/branch you add is Preference 1. Moving a choice changes only this selected list.</div>
 <div class="count" id="selectedCount">0 selected</div><div class="selected" id="selected"></div>
-<div class="toolbar"><button id="share">Share selected choices</button><button id="export">Export selected CSV</button><button id="clear">Clear selections</button><button id="reset">Reset saved selections</button></div>
+<div class="toolbar"><button id="share">Share selected choices</button><button id="export">Download selected CSV</button><button id="clear">Clear selections</button><button id="reset">Reset saved selections</button></div>
 </section></div>
 <p class="footnote">🔒 Your selections save automatically in this browser on this device. They are private to this browser and do not sync to another device. This is a personal planning tool, not the official PGMAC portal.</p>
 </div>
